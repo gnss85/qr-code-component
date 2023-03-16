@@ -6,10 +6,10 @@
 }
 
 :root {
-  --hsl-clr-primary: 218, 44%, 22%;
-  --hsl-clr-secondary: 220, 15%, 55%;
-  --hsl-clr-bg: 212, 45%, 89%;
-  --hsl-clr-neutral: 0, 0%, 100%;
+  --hsl-clr-primary: 218 44% 22%;
+  --hsl-clr-secondary: 220 15% 55%;
+  --hsl-clr-bg: 212 45% 89%;
+  --hsl-clr-neutral: 0 0% 100%;
 
   --clr-primary: hsl(var(--hsl-clr-primary));
   --clr-secondary: hsl(var(--hsl-clr-secondary));
@@ -67,7 +67,7 @@ main {
 
 .qr-code {
   --component-width: 20em;
-  --box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+  --box-shadow: 0 5px 5px hsl(0 0% 0% / 0.05);
   --padding: 1em;
   --border-radius: 1.5em;
 
