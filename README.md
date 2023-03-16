@@ -23,10 +23,18 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+https://qr-code-component-main-pr.netlify.app/
 
 ## My process
+
+First I set up my custom properties in my :root
+(These are containing all used colors, the used - and possible font-sizes).
+
+Next I set up the used font and added it to my custom properties.
+
+In my HTML I then created all necessary blocks and a logical name convention for the classes.
+
+When styling everything in CSS I focussed on creating all styles and custom properties to create a component which is very reusable and easy to edit.
 
 ### Built with
 
@@ -34,58 +42,46 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 - Vite
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+In HTML I used a h2 element for the only existing headline because I created this with the purpose of a component in mind. So this headline would never be the 'Top-Headline' of a page.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<h2>Improve your front-end skill by building projects</h2>
 ```
 
+I created custom properties which were used just in this class just to make the component easier to modify
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.qr-code {
+  --component-width: 20em;
+  --box-shadow: 0 5px 5px hsl(0 0% 0% / 0.05);
+  --padding: 1em;
+  --border-radius: 1.5em;
+
+  max-width: var(--component-width);
+  padding: var(--padding);
+
+  text-align: center;
+
+  background-color: hsl(var(--hsl-clr-neutral));
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I future projects I want to further improve the use of custom properties and utility classes to make my code better
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@gnss85](https://www.frontendmentor.io/profile/gnss85)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Thanks to Kevin Powell I learned a lot before starting this.
